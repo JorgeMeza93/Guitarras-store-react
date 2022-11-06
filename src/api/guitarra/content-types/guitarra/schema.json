@@ -21,6 +21,21 @@
     },
     "precio": {
       "type": "decimal"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "nombre"
     }
   }
 }
